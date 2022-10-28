@@ -1,3 +1,4 @@
+// Lottery.sol
 pragma solidity ^0.4.17;
 
 contract Lottery {
@@ -9,7 +10,7 @@ contract Lottery {
     }
     
     function enter() public payable {
-        require(msg.value > .01 ether);
+        require(msg.value > .001 ether);
         players.push(msg.sender);
     }
     
